@@ -174,14 +174,14 @@ nav{
 }
 
 #a1 .parallax-bg{
-	background-image: url(../images/2.jpg);
+	background-image: url(../images/2a.jpg);
 	/*background-position: center -200px !important;*/
 }
 #a2 .parallax-bg{
-	background-image: url(../images/4.jpg);
+	background-image: url(../images/4b.jpg);
 }
 #a3 .parallax-bg{
-	background-image: url(../images/3.jpg);
+	background-image: url(../images/3a.jpg);
 }
 .parallax-bg{
 	position: absolute;
