@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parallax</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<span data-count="2" id="dataCount"></span>
+	<nav>
+		<div class="container">
+			<div class="siteName">
+				<img src="images/small/blog3.png" style="height: 60px;width: auto;margin-top: 5px;">
+			</div>
+			<ul class="nav-items">
+				    <!-- <li class="nav-item">About Us</li> -->
+					<label for="searchToggle">
+				    <li class="nav-item">
+				    	<input type="checkbox" id="searchToggle">
+				    	<input type="search" placeholder="Type here..." class="nav-search-bar">
+				    	<i class="fas fa-search"></i>
+				    </li>
+				    </label>
+				    <li class="nav-item" style="padding: 0;cursor: auto">
+				    	<button>Topics</button>
+				    	<div class="inner-nav-items">
+				    		<ul class="inner-items">
+				    			<li class="inner-item">Topic 1</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 2</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 2</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 2</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 2</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 2</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 2</li>
+				    			<hr>
+				    			<li class="inner-item">Topic 3</li>
+				    		</ul>
+				    	</div>
+				    </li>
+				    <li class="nav-item active">Contact</li>
+				    <li class="nav-item">Downloads</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				
+			</div>
+		</div>
+	</footer>
+	
+
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
+<script type="text/javascript">
+	var cur=0;
+    function showLarge(id){
+    	console.log(id);
+    	if (cur!=0) {
+    		$("#img"+cur).css('display','none');
+    		$("#desc"+cur).css('display','none');
+    	}
+    	$("#img"+id).css('display','block');
+    	$("#desc"+id).css('display','block');
+    	cur=id;
+
+    	$('.modal-container').fadeIn(500);
+    }
+    $("#closeModal").click(function(){
+    	$(".modal-container").fadeOut(500);	
+    });
+</script>
+</html>

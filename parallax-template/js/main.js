@@ -17,7 +17,7 @@ $(window).scroll(function () {
 	$("#popOut").css('margin-top',(-80+(scrollTop*0.15))+'px');
 
 	if (scrollTop>100) {
-		$('nav').css('background','#ffc123');
+		$("nav").css("background", "#1C79A1");
 		$('nav').css('background-image','none');
 		$('nav').css('box-shadow','5px 5px 15px 0 rgba(0,0,0,0.15)');
 		$('.pop-out-info').css('opacity','0');
@@ -43,6 +43,6 @@ $(window).scroll(function () {
 $(document).ready(function(){
 	var scrollTop = $(this).scrollTop();
 	if (scrollTop>400) {
-		$('nav').css('background','#ffc123');
+		$("nav").css("background", "#1C79A1");
 	}
 });

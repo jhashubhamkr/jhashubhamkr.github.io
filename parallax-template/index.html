@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>Parallax Template</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="fontawesome/fontawesome/css/all.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<span data-count="2" id="dataCount"></span>
+	<nav>
+		<div class="container">
+			<div class="siteName">
+				<img src="images/small/blog3.png" style="height: 60px;width: auto;margin-top: 5px;">
+			</div>
+			<ul class="nav-items">
+				<label for="searchToggle">
+					<li class="nav-item">
+						<input type="checkbox" id="searchToggle">
+						<input type="search" placeholder="Type here..." class="nav-search-bar">
+						<i class="fas fa-search"></i>
+					</li>
+				</label>
+				<li class="nav-item" style="padding: 0;cursor: auto">
+					<button>Topics</button>
+					<div class="inner-nav-items">
+						<ul class="inner-items">
+							<li class="inner-item">Topic 1</li>
+							<hr>
+							<li class="inner-item">Topic 2</li>
+							<hr>
+							<li class="inner-item">Topic 2</li>
+							<hr>
+							<li class="inner-item">Topic 2</li>
+							<hr>
+							<li class="inner-item">Topic 2</li>
+							<hr>
+							<li class="inner-item">Topic 2</li>
+							<hr>
+							<li class="inner-item">Topic 2</li>
+							<hr>
+							<li class="inner-item">Topic 3</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">Contact</li>
+				<li class="nav-item">Downloads</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="parallax-container" id="a1">
+		<div class="parallax-bg" ></div>
+		<div class="parallax-content">
+			<div class="parallax-body">
+				<h1>Web Design</h1>
+				<p>This is the hero image of this blog.</p>
+				<button>SUBSCRIBE TO MY BLOG</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+
+		<div class="content">
+			<div id="popOut" class="pop-out">
+				<img src="images/avatar_2.jpg" class="avatar">
+				<div class="pop-out-info">
+					<span class="name">Shubham Kumar Jha</span><br>
+					<small class="date">On: 14th Sep, 2018</small>
+				</div>
+			</div>
+			<h1 style="text-align: right;margin-top: -20px;">What is Web Designing?</h1>
+			<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.</p>
+			<br>
+			<br>
+
+			<h1 style="text-align: right;margin-top: -20px;">What is Web Designing?</h1>
+
+			<p>The term web design is normally used to describe the design process relating to the front-end (client side).</p>
+			<p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include:</p>
+			<ul>
+				<li>Web graphic design</li>
+				<li>UI design</li>
+				<li>Authoring</li>
+				<li>UX design</li>
+				<li>SEO</li>
+			</ul>
+			<p>Often many individals work in teams to cover different aspects of web design process, although some designers cover them all.</p>
+			<p>Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.</p>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+	<div class="parallax-container" id="a2">
+		<div class="parallax-bg"></div>
+		<div class="parallax-content">
+			<div class="parallax-body">
+				<p>A modern responsive parallax theme for your website</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="highlight bg-sec-2">
+				<div class="highlight-head">
+					Quote of the day
+				</div>
+				<div class="highlight-border">
+					<div class="highlight-content">
+						Programming is thinking not Typing.<br/>
+						-&nbsp;&nbsp;Anonymous
+					</div>
+				</div>
+			</div>
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus dolorem at eum error pariatur laboriosam quibusdam obcaecati, aliquam a hic esse non earum ducimus rem distinctio quas! Magnam, corporis.</p>
+
+			<div class="image-display">
+				<div class="image-display-head">
+					These are some of the clicks of this weekend:
+				</div>
+				<div class="image-single" onclick="showLarge(1)" style="background-image:url('images/small/display1.jpg');">
+					<img src="images/display1.jpg" style="height:200px;width: auto;display: none;">
+					<div class="overlay">
+						<span class="plus"><i class="material-icons large">zoom_in</i></span>
+						<span class="bottom-corners"></span>
+					</div>
+				</div>
+				<div class="image-single" onclick="showLarge(2)" style="background-image:url('images/small/display5.jpg');">
+					<div class="overlay">
+						<span class="plus"><i class="material-icons large">zoom_in</i></span>
+						<span class="bottom-corners"></span>
+					</div>
+				</div>
+				<div class="image-single" onclick="showLarge(3)" style="background-image:url('images/small/display3.jpg');">
+					<div class="overlay">
+						<span class="plus"><i class="material-icons large">zoom_in</i></span>
+						<span class="bottom-corners"></span>
+					</div>
+				</div>
+				<div class="image-single" onclick="showLarge(4)" style="background-image:url('images/small/display4.jpg');">
+					<div class="overlay">
+						<span class="plus"><i class="material-icons large">zoom_in</i></span>
+						<span class="bottom-corners"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-container">
+			<div class="modal">
+				<div class="close-modal" id="closeModal">
+					<div>+</div>
+				</div>
+				<div class="modal-content" id="img1">
+					<img src="images/display1.jpg" >
+					
+				</div>
+				<div class="modal-content" id="img2">
+					<img src="images/display5.jpg">
+					
+				</div>
+				<div class="modal-content" id="img3">
+					<img src="images/display3.jpg">
+				</div>
+				<div class="modal-content" id="img4">
+					<img src="images/display4.jpg">
+					
+				</div>
+			</div>
+			<div class="img-desc" id="desc1">
+				<div class="container">
+					<h2>Lion</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab, numquam quae eveniet tempora aspernatur! Vitae amet nesciunt.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab, numquam quae eveniet tempora aspernatur! Vitae amet nesciunt.</p>
+				</div>
+			</div>
+			<div class="img-desc" id="desc2">
+				<div class="container">
+					<h2>Mushrooms</h2>
+					<p>This is the image I clicked in ranchi with an smartphone. I have edited its background to increase the blur strenght, in order to make it look mode beautifull.</p>
+				</div>
+			</div>
+			<div class="img-desc" id="desc3">
+				<div class="container">
+					<h2>Image header here...</h2>
+					<p>this is the description for the theird image.again again again again again again again again again again again again again.</p>
+				</div>
+			</div>
+			<div class="img-desc" id="desc4">
+				<div class="container">
+					<h2>Water drops</h2>
+					<p>This is a very large image, with a aspect ratio of 9:16. You can scroll down to see the whole image.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="parallax-container" id="a3">
+		<div class="parallax-bg"></div>
+		<div class="parallax-content">
+			<div class="parallax-body">
+				<h1>Jane doe</h1>
+				<p>A modern responsive parallax theme for your website</p>
+				<button>GET STARTED</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="highlight bg-sec-2">
+				<div class="highlight-head">
+					Some catchy heading
+				</div>
+				<div class="highlight-border">
+					<div class="highlight-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae perferendis, qui expedita asperiores dignissimos deserunt, omnis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae perferendis, qui expedita asperiores dignissimos deserunt, omnis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae perferendis, qui expedita asperiores dignissimos deserunt, omnis.
+					</div>
+				</div>
+			</div>
+			
+			<h1>Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus dolorem at eum error pariatur laboriosam quibusdam obcaecati, aliquam a hic esse non earum ducimus rem distinctio quas! Magnam, corporis.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nisi vero aliquid praesentium. Temporibus dignissimos, fugiat ullam tenetur ab mollitia, adipisci velit obcaecati distinctio rem esse officia commodi suscipit quam.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nisi vero aliquid praesentium. Temporibus dignissimos, fugiat ullam tenetur ab mollitia, adipisci velit obcaecati distinctio rem esse officia commodi suscipit quam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nisi vero aliquid praesentium. Temporibus dignissimos, fugiat ullam tenetur ab mollitia, adipisci velit obcaecati distinctio rem esse officia commodi suscipit quam.</p>
+		</div>
+		<div>
+			
+		</div>
+	</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container flex-container" style="padding: 20px 0;">
+				<div class="siteName">
+					<img src="images/small/blog3.png" style="height: 50px;width: auto;margin-top: 5px;">
+				</div>
+				<div class="links">
+					<h4>MY BLOG</h4>
+					<ul class="links">
+						<li>Questions</li>
+						<li>Help</li>
+					</ul>
+				</div>
+				<div class="links">
+					<h4>PRODUCTS</h4>
+					<ul class="links">
+						<li>Teams</li>
+						<li>Advertising</li>
+						<li>Collectives</li>
+						<li>Talent</li>
+					</ul>
+				</div>
+				<div class="links">
+					<h4>SOCIALS</h4>
+					<ul class="links">
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>Linkedin</li>
+					</ul>
+				</div>
+				<div class="links">
+					<p>
+						Experience stunning visual depth and immersive design with our parallax template static website. Perfect for showcasing
+						your brand's story and capturing your audience's attention.
+					</p>
+					<button>SUBSCRIBE</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				Site design / logo © 2023 Shubham Kumar Jha
+			</div>
+		</div>
+	</footer>
+	
+
+
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
+<script type="text/javascript">
+	var cur=0;
+    function showLarge(id){
+    	console.log(id);
+    	if (cur!=0) {
+    		$("#img"+cur).css('display','none');
+    		$("#desc"+cur).css('display','none');
+    	}
+    	$("#img"+id).css('display','block');
+    	$("#desc"+id).css('display','block');
+    	cur=id;
+
+    	$('.modal-container').fadeIn(500);
+    }
+    $("#closeModal").click(function(){
+    	$(".modal-container").fadeOut(500);	
+    });
+</script>
+</html>
