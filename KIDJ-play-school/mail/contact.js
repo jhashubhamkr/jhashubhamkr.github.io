@@ -18,7 +18,7 @@ $(function () {
                 Host: "smtp.elasticemail.com",
                 Username: "sj.html@gmail.com",
                 Password: "3109DD3788881C256C7E7F2B700207ED4348",
-                To: "shiivamjha@gmail.com",
+                To: "shiivamjha2@gmail.com",
                 From: "sj.html@gmail.com",
                 Subject: `FROM: ${email} - ${subject}`,
                 Body: message,
