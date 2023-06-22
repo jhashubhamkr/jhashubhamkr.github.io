@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Jha</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=PT+Mono&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://kit.fontawesome.com/b17edf4091.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="cursor-position-overlay"></div> -->
+    <nav>
+      <div class="arrow up-arrow disabled" data-scroll="">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+      <div class="hero">
+        <p onclick="jumpTo('home');">SHUBHAM JHA</p>
+      </div>
+      <div class="action-item">
+        <button class="retro" onclick="jumpTo('contact');">Get in touch</button>
+      </div>
+    </nav>
+    <aside class="left">
+      <div class="arrow down-arrow" data-scroll="about">
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </aside>
+    <aside class="right">
+      <div class="menu-container">
+        <ul class="menu">
+          <li class="menu-item active" id="home" data-section="home">Home -</li>
+          <li class="menu-item" id="about" data-section="about">About me -</li>
+          <li class="menu-item" id="education" data-section="education">Education -</li>
+          <li class="menu-item" id="projects" data-section="projects">Projects -</li>
+          <li class="menu-item" id="contact" data-section="contact">Contact -</li>
+        </ul>
+      </div>
+      <div class="links">
+        <div class="link">
+          <a href="https://github.com/jhashubhamkr" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://codepen.io/jhashubhamkr" target="_blank">
+            <i class="fa-brands fa-codepen"></i>
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://www.linkedin.com/in/jhashubhamkr/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main id="mainContainer">
+      <section class="page-section home pure-g scroll-in">
+        <div class="pure-u-1 pure-u-md-1 pure-u-lg-16-24">
+          <h5 class="heading-top">Hi, I am a</h5>
+          <div class="heading">
+            <span>
+              Web
+            </span>
+            <span>
+              Developer
+            </span>
+          </div>
+          <div class="description">
+            <p>
+              Driven by my deep passion for <strong>design</strong> and <strong>coding</strong>, I thoroughly enjoy the process of transforming complex designs into <strong>captivating</strong>, <strong>user-friendly</strong> websites.
+            </p>
+          </div>
+          <div class="action-buttons">
+            <button class="retro" onclick="jumpTo('projects');">Check my latest work</button>
+            <button class="underline" onclick="jumpTo('about');">MORE ABOUT ME</button>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1 pure-u-lg-8-24">
+          <div class="image-bordered">
+            <img src="./images/portfolio_image.jpg" alt="Shubham Jha">
+          </div>
+        </div>
+      </section>
+      <section class="page-section about pure-g">
+        <div class="pure-u-1 pure-u-md-1">
+          <h5 class="heading-top">About me</h5>
+          <div class="heading">
+            <span>
+              Passionate
+            </span>
+            <span>
+              & Result-Driven
+            </span>
+          </div>
+          <div class="about-container pure-g">
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-5-12">
+              <h5 class="heading-top">Summary</h5>
+              <p>Experienced Web Developer with a demonstrated history of working in the technology and services industry. Skilled in HTML, CSS, JavaScript/jQuery, PHP/Laravel, Java/SpringBoot, MySQL, and Firebase. Strong engineering professional with a Master of Computer Applications from Jain University, Bangalore.
+              </p>
+              <p class="version-2" style="display:none;">
+                Passionate and versatile web developer with expertise in HTML, CSS, JavaScript/jQuery, PHP/Laravel, Java/SpringBoot, and MySQL. Skilled in developing full-stack websites, REST APIs, utilising Git, and agile development. MCA (Master of Computer Application) graduate from Jain University Bangalore with strong academic performance. Experienced with Bootstrap, Amazon S3, Amazon EC2, Firebase, Pusher, Mantis, JIRA, and various other tools and technologies. Committed to delivering high-quality work, creating engaging user experiences, and staying updated with industry trends. A collaborative team player dedicated to excellence in web development.
+              </p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1 pure-u-lg-7-12">
+              <div class="skills-heading">
+                <h5 class="heading-top">Skills</h5>
+                <button class="underline" data-open-modal data-target="skills-modal">More</button>
+              </div>
+              <table class="skills-table">
+                <tbody>
+                  <tr>
+                    <th>HTML & CSS</th>
+                    <td>
+                      <div class="exp-bar width-80"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>JavaScript & jQuery</th>
+                    <td>
+                      <div class="exp-bar width-80"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>PHP & Laravel</th>
+                    <td>
+                      <div class="exp-bar width-80"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>MySQL</th>
+                    <td>
+                      <div class="exp-bar width-60"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Git</th>
+                    <td>
+                      <div class="exp-bar width-60"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>REST APIs</th>
+                    <td>
+                      <div class="exp-bar width-50"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Java & SpringBoot</th>
+                    <td>
+                      <div class="exp-bar width-30"></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Firebase</th>
+                    <td>
+                      <div class="exp-bar width-20"></div>
+                    </td>
+                  </tr>
+                  <tr class="scale-container">
+                    <th>(years)</th>
+                    <td>
+                      <div class="scale">
+                        <span class="scale-unit scale-0">0</span>
+                        <span class="scale-unit scale-1">1</span>
+                        <span class="scale-unit scale-2">2</span>
+                        <span class="scale-unit scale-3">3</span>
+                        <span class="scale-unit scale-4">4</span>
+                        <span class="scale-unit scale-5">5</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section education">
+        <div class="pure-u-1 pure-u-md-1">
+          <h5 class="heading-top">My</h5>
+          <div class="heading">
+            <span>
+            </span>
+            <span>
+              Education
+            </span>
+          </div>
+          <div class="image-cards-container">
+            <div class="image-card">
+              <img src="./images/jain_university_bangalore.jpg" alt="Jain University, Bangalore">
+              <div class="details">
+                <div class="heading">
+                  MCA - 2021
+                </div>
+                <div class="sub-heading">
+                  Jain University, Bangalore
+                </div>
+              </div>
+            </div>
+            <div class="image-card">
+              <img src="./images/amity_university_ranchi.jpg" alt="Amity University, Ranchi">
+              <div class="details">
+                <div class="heading">
+                  BCA - 2019
+                </div>
+                <div class="sub-heading">
+                  Amity University, Ranchi
+                </div>
+              </div>
+            </div>
+            <div class="image-card last">
+              <img src="./images/oxford_public_school_ranchi.jpg" alt="Oxford Public School, Ranchi">
+              <div class="details">
+                <div class="heading">
+                  12th Std - 2016
+                </div>
+                <div class="sub-heading">
+                  Oxford Public School, Ranchi
+                </div>
+              </div>
+            </div>
+            <div class="left-overlay"></div>
+            <div class="right-overlay"></div>
+          </div>
+          <div class="image-cards-buttons">
+            <button class="retro previous-btn">Previous</button>
+            <button class="retro next-btn">Next</button>
+          </div>
+        </div>
+      </section>
+      <section class="page-section projects">
+        <div class="pure-u-1 pure-u-md-1">
+          <h5 class="heading-top">My</h5>
+          <div class="heading">
+            <span>
+            </span>
+            <span>
+              Projects
+            </span>
+          </div>
+          <div class="image-cards-container">
+            <div class="image-card">
+              <img src="./images/US_bank_corp.jpg" alt="US Bank">
+              <div class="details">
+                <div class="heading">
+                  US Bank via TCS
+                </div>
+                <div class="sub-heading">
+                  Java Developer, Oct, 2021 - Present
+                  <!-- Java, SpringBoot, Microservice, RestAPIs -->
+                </div>
+              </div>
+            </div>
+            <div class="image-card">
+              <div class="external-link">
+                <a href="https://atg.world/" target="_blank">
+                  <i class="fa-solid fa-square-up-right"></i>
+                </a>
+              </div>
+              <img src="./images/across_the_globe.png" alt="Across The Globe">
+              <div class="details">
+                <div class="heading">
+                  Across The Globe
+                </div>
+                <div class="sub-heading">
+                  Full-Stack Developer, 2020 - 2022 (2+ years)
+                </div>
+              </div>
+            </div>
+            <div class="image-card last">
+              <div class="external-link">
+                <a href="https://www.invoicecrowd.com/" target="_blank">
+                  <i class="fa-solid fa-square-up-right"></i>
+                </a>
+              </div>
+              <img src="./images/invoice_crowd.png" alt="Invoice Crowd">
+              <div class="details">
+                <div class="heading">
+                  Invoice Crowd
+                </div>
+                <div class="sub-heading">
+                  Full Stack Developer, 2023
+                </div>
+              </div>
+            </div>
+            <div class="image-card last">
+              <img src="./images/MLM_network_marketing.jpg" alt="Multi Level Marketing">
+              <div class="details">
+                <div class="heading">
+                  NufozSys
+                </div>
+                <div class="sub-heading">
+                  Full Stack Developer, 6+ Months
+                </div>
+              </div>
+            </div>
+            <div class="image-card last">
+              <img src="./images/fit_yug.jpg" alt="FitYug">
+              <div class="details">
+                <div class="heading">
+                  FitYug
+                </div>
+                <div class="sub-heading">
+                  Full Stack Developer, 6 Months
+                </div>
+              </div>
+            </div>
+            <div class="left-overlay"></div>
+            <div class="right-overlay"></div>
+          </div>
+          <div class="image-cards-buttons">
+            <button class="retro previous-btn">Previous</button>
+            <button class="retro next-btn">Next</button>
+          </div>
+        </div>
+      </section>
+      <section class="page-section contact">
+        <h1>Contact</h1>
+      </section>
+    </main>
+    <div class="retro-modal" id="skills-modal">
+      <div class="retro-modal-titlebar">
+        <div class="retro-modal-title">Skills</div>
+        <div class="retro-modal-buttons">
+          <!-- <button class="retro-modal-minimize">-</button> -->
+          <!-- <button class="retro-modal-maximize">+</button> -->
+          <button class="retro-modal-close">x</button>
+        </div>
+      </div>
+      <div class="retro-modal-content">
+        <div class="list-category">
+          <ol>
+            <li>
+              <h4>
+                Programming/Scripting Languages:
+              </h5>
+              <ul>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>JAVA</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                Backend/Frontend Frameworks:
+              </h5>
+              <ul>
+                <li>Laravel</li>
+                <li>SpringBoot</li>
+                <li>Lumen</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Materialize CSS</li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                Databases:
+              </h5>
+              <ul>
+                <li>MySQL</li>
+                <li>Firebase</li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                Other Tools & Tech:
+              </h5>
+              <ul>
+                <li>GIT</li>
+                <li>Amazon S3</li>
+                <li>Amazon EC2</li>
+                <li>cPanel</li>
+                <li>Pusher</li>
+                <li>JIRA</li>
+                <li>Mantis</li>
+                <li>Payment APIs</li>
+                <li>Swagger API Doc</li>
+                <li>Figma</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+              </ul>
+            </li>
+            <li>
+              <h4>
+                Less Explored Interests:
+              </h5>
+              <ul>
+                <li>Logo Designing</li>
+                <li>Video Editing</li>
+                <li>3D Modeling & Animations</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const items = ["home", "about", "education", "projects", "contact"];
+    const modals = ["skills-modal"];
+    const itemDistances = {};
+    var previousHeight = $(window).height();
+    var activeItem = 0;
+    var lastScroll = 0;
+    var isScrolling = false;
+
+    // Pagination script start
+    function calculateItemDistances() {
+      var containerHeight = $("#mainContainer").height();
+      items.forEach((item, i) => {
+        itemDistances[item] = containerHeight * i;
+      });
+    }
+    function getNextActive() {
+      if (activeItem == items.length - 1) {
+        return null;
+      }
+      return items[activeItem + 1];
+    }
+
+    function getPreviousActive() {
+      if (activeItem == 0) {
+        return null;
+      }
+      return items[activeItem - 1];
+    }
+
+    function getActiveName() {
+      return items[activeItem];
+    }
+
+    function updateActive() {
+      $(".menu-item.active").removeClass("active")
+      $(`.menu-item#${items[activeItem]}`).addClass("active");
+      $("#mainContainer section").removeClass("scroll-in");
+      $(`#mainContainer section.${items[activeItem]}`).addClass("scroll-in");
+      if (activeItem == 0) {
+        $(".arrow.up-arrow").addClass("disabled");
+      }else{
+        $(".arrow.up-arrow").removeClass("disabled");
+      }
+      if (activeItem == (items.length - 1)) {
+        $(".arrow.down-arrow").addClass("disabled");
+      }else{
+        $(".arrow.down-arrow").removeClass("disabled");
+      }
+    }
+
+    function scrollToElement(itemName) {
+      isScrolling = true;
+      $("#mainContainer").css("overflow", "hidden");
+      $("#mainContainer").scrollTop(itemDistances[itemName]);
+      lastScroll = itemDistances[itemName];
+      updateActive();
+      setTimeout(function () {
+        isScrolling = false;
+        $("#mainContainer").css("overflow", "auto");
+      }, 1000);
+    }
+
+    function scrollDir(dir) {
+      var currentActive = "";
+      if (!isScrolling) {
+        if (dir === "down") {
+          currentActive = getNextActive();
+          activeItem = activeItem + 1;
+        }else{
+          currentActive = getPreviousActive();
+          activeItem = activeItem - 1;
+        }
+        scrollToElement(currentActive);
+      }
+    }
+
+    function jumpTo(jumpToItem) {
+      if (!isScrolling || $(".menu-item#"+jumpToItem).hasClass('active')) {
+        jumpToItemIndex = items.findIndex(item => item == jumpToItem)
+        activeItem = jumpToItemIndex;
+        scrollToElement(jumpToItem);
+      }
+    }
+
+    $(".menu-item").click(function(){
+      if (!$(this).hasClass('active')) {
+        jumpTo($(this).data('section'));
+      }
+    })
+
+    $(".arrow").click(function(){
+      if (!$(this).hasClass('disabled')) {
+        if ($(this).hasClass('up-arrow')) {
+          scrollDir("up");
+        }else{
+          scrollDir("down");
+        }
+      }
+    })
+
+    $(window).on('resize', function() {
+      var currentHeight = $(window).height();
+      if (currentHeight !== previousHeight) {
+        calculateItemDistances();
+        scrollToElement(items[activeItem]);
+        previousHeight = currentHeight;
+      }
+    });
+
+    $(window).on('orientationchange', function() {
+      // console.log('Window orientation changed');
+    });
+
+    $(document).ready(function () {
+      calculateItemDistances()   
+      $("#mainContainer").scroll(function (event) {
+        var scrollTop = $(this).scrollTop();
+        if (lastScroll < scrollTop) {
+          scrollDir("down");
+        } else {
+          scrollDir("up");
+        }
+      });
+    });
+    // Pagination script end
+
+    // Cards pagination
+    $(document).ready(function() {
+      $('button.retro.previous-btn').click(function() {
+        var scrollContainer = $(this).parent().siblings('.image-cards-container');
+        var imageCard = $(this).parent().siblings('.image-cards-container').children('.image-card');
+        scrollContainer.animate({ scrollLeft: '-=' + (imageCard.width()) }, 0);
+      });
+
+      $('button.retro.next-btn').click(function() {
+        var scrollContainer = $(this).parent().siblings('.image-cards-container');
+        var imageCard = $(this).parent().siblings('.image-cards-container').children('.image-card');
+        scrollContainer.animate({ scrollLeft: '+=' + (imageCard.width()) }, 0);
+      });
+    });
+    // Cards Pagination end
+
+    // Model script start
+    $(document).ready(function() {
+      $(document).click(function(event) {
+        var clickedElement = $(event.target);
+
+        if (clickedElement.is('[data-open-modal]')) {
+          var attributeValue = clickedElement.attr('data-target');
+          if (!$("#"+attributeValue).hasClass('show')) {
+            $("#"+attributeValue).addClass('show')
+          }
+        }
+      });
+
+      $('.retro-modal-titlebar').mousedown(function(event) {
+        event.preventDefault(); // Prevent default text selection behavior
+        var modal = $(this).closest('.retro-modal');
+        var startPosX = event.clientX - modal.offset().left;
+        var startPosY = event.clientY - modal.offset().top;
+        $(document).mousemove(function(moveEvent) {
+          var newTop = moveEvent.clientY - startPosY
+          if (newTop >= 0 && newTop <= ($("body").height() + 44)) {
+            modal.css({
+              top: newTop,
+              left: moveEvent.clientX - startPosX
+            });
+          }else{
+            modal.css({
+              left: moveEvent.clientX - startPosX
+            });
+          }
+        });
+
+        $(document).mouseup(function() {
+          $(document).off('mousemove');
+          $(document).off('mouseup');
+        });
+      });
+
+      // Minimize button
+      $('.retro-modal-minimize').click(function() {
+        var modal = $(this).closest('.retro-modal');
+        modal.toggleClass('modal-minimized');
+      });
+
+      // Maximize button
+      $('.retro-modal-maximize').click(function() {
+        var modal = $(this).closest('.retro-modal');
+        modal.toggleClass('modal-maximized');
+      });
+
+      // Close button
+      $('.retro-modal-close').click(function() {
+        var modal = $(this).closest('.retro-modal');
+        modal.removeClass('show');
+      });
+    });
+    // $(document).ready(function() {
+    //   $(document).mousemove(function(event) {
+    //     var cursorPosition = `X: ${event.pageX}px, Y: ${event.pageY}px`;
+    //     $('#cursor-position-overlay').text(cursorPosition);
+    //   });
+    // });
+  </script>
+</html>
