@@ -442,6 +442,9 @@
         </div>
       </div>
     </div>
+    <div class="retro-loader-overlay">
+      <div class="message">LOADING</div>
+    </div>
   </body>
   <script>
     const items = ["home", "about", "education", "projects", "contact"];
@@ -558,6 +561,9 @@
     });
 
     $(document).ready(function () {
+      setTimeout(() => {
+        $("div.retro-loader-overlay").fadeOut(200);
+      }, 500);
       calculateItemDistances()   
       $("#mainContainer").scroll(function (event) {
         var scrollTop = $(this).scrollTop();
