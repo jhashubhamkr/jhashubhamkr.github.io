@@ -53,6 +53,24 @@ div.retro-loader-overlay .message{
     animation-direction: alternate;
     width: 450px;
 }
+div.retro-loader-overlay .disclaimer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: var(--cream-dark);
+}
+div.retro-loader-overlay.responsive-disclaimer {
+    display: none;
+}
+div.retro-loader-overlay.responsive-disclaimer .message {
+    font-size: 30px;
+    width: 550px;
+    padding: 16px;
+}
 @keyframes textflicker {
     0% {
         text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
@@ -326,6 +344,9 @@ body main::-webkit-scrollbar {
 section.home{
     padding-top: 80px;
 }
+.page-section {
+    /* min-height: 720px; */
+}
 .page-section .heading-top{
     font-size: 24px;
     font-weight: 600;
@@ -397,7 +418,7 @@ section.home{
     width: auto;
     transform-origin: center center;
     transform: scale(1.075);
-    filter: grayscale(100%) contrast(0.8) brightness(1.1) sepia(10%);
+    filter: grayscale(100%) contrast(0.8) brightness(1.1) sepia(30%);
     transition: all 1s ease-in-out;
 }
 .image-bordered:hover img{
@@ -489,6 +510,9 @@ table.skills-table .exp-bar{
     background-color: var(--cream-dark);
     transition: width 1.5s cubic-bezier(0.40, 0, 0.2, 1) 0.25s;
 }
+.page-section.about.scroll-in table.skills-table .exp-bar.width-10 {
+    width: 10%;
+}
 .page-section.about.scroll-in table.skills-table .exp-bar.width-20 {
     width: 20%;
 }
@@ -578,7 +602,7 @@ table.skills-table .exp-bar{
     top: 10px;
     right: 10px;
     font-size: 32px;
-    text-shadow: 0 6px 16px rgba(0, 0, 0, 0.75);
+    /* text-shadow: 0 6px 16px rgba(0, 0, 0, 0.75); */
     transform: scale(0.9);
     opacity: 0;
     transition: all 0.25s ease-in-out;
@@ -598,7 +622,7 @@ table.skills-table .exp-bar{
     width: auto;
     transform-origin: center center;
     transform: scale(1.075);
-    filter: grayscale(100%) contrast(0.8) brightness(1.1) sepia(10%);
+    filter: grayscale(100%) contrast(0.8) brightness(1.1) sepia(30%);
     transition: all 1s ease-in-out;
 }
 
@@ -642,8 +666,6 @@ table.skills-table .exp-bar{
     position: fixed;
     top: 300px;
     left: 300px;
-    width: 450px;
-    height: 300px;
     transform: scale(0.6) translateY(-100px);
     opacity: 0;
     visibility: hidden;
@@ -655,12 +677,26 @@ table.skills-table .exp-bar{
     /* box-shadow: 0 5px 10px rgba(51,51,51, 0.4); */
     transition: transform 1s cubic-bezier(0.69, 0.04, 0, 0.96), opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-.retro-modal.show{
-    opacity: 1;
-    visibility: visible;
+.retro-modal.skills {
     width: 450px;
     height: 300px;
+}
+.retro-modal.case-study {
+    width: 600px;
+    height: 350px;
+}
+.retro-modal.show {
+    opacity: 1;
+    visibility: visible;
     transform: scale(1) translateY(0);
+}
+.retro-modal.skills.show {
+    width: 450px;
+    height: 300px;
+}
+.retro-modal.case-study.show {
+    width: 600px;
+    height: 350px;
 }
 
 .retro-modal-titlebar {
@@ -669,8 +705,12 @@ table.skills-table .exp-bar{
     align-items: center;
     border-bottom: 2px solid var(--black);
     border-radius: 5px 5px 0 0;
-    background-color: var(--cream-darker);
+    background-color: var(--cream);
     cursor: move;
+    transition: all 0.25s ease-in-out;
+}
+.retro-modal.top .retro-modal-titlebar {
+    background-color: var(--cream-darker);
 }
 
 .retro-modal-title {
@@ -694,10 +734,13 @@ table.skills-table .exp-bar{
     border-radius:0 5px 0 0;
     outline: none;
     cursor: pointer;
-    background-color: var(--cream-darker);
+    background-color: var(--cream);
     transition: all 0.25s ease-in-out;
     font-size: 20px;
     line-height: 44px;
+}
+.retro-modal.top .retro-modal-buttons button {
+    background-color: var(--cream-darker);
 }
 .retro-modal-buttons button:hover {
     background-color: var(--white-darker);
@@ -708,10 +751,37 @@ table.skills-table .exp-bar{
 .retro-modal-content {
     width: 100%;
     padding: 10px;
-    height: 250px;
     overflow: auto;
 }
-
+.retro-modal.skills .retro-modal-content {
+    height: 250px;
+}
+.retro-modal.case-study .retro-modal-content {
+    padding: 10px 20px;
+    height: 300px;
+}
+.retro-modal.case-study .retro-modal-content > h4 {
+    margin: 16px 0 10px 0;
+}
+.retro-modal.case-study .retro-modal-content > p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+.retro-modal.case-study .retro-modal-content .list-category > ul {
+    list-style: none;
+    padding-left: 10px;
+}
+.retro-modal.case-study .retro-modal-content .list-category > ul > li > ul {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.retro-modal.case-study .retro-modal-content .list-category > ul > li > ul > li {
+    margin: 10px 0;
+    text-align: justify;
+}
 .retro-modal-maximized {
     top: 0 !important;
     left: 0 !important;
