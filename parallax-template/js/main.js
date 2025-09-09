@@ -1,4 +1,4 @@
-oldScroll=0;
+let oldScroll = 0;
 $(window).scroll(function () {
 	var scrollTop = $(this).scrollTop();
 	var windowBottom=window.scrollY + window.innerHeight;
